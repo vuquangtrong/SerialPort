@@ -6,7 +6,7 @@ CXX=g++
 CFLAGS= -Ofast -Wall
 LIKER_LIBS=
 
-SHARED_LINKER_FLAGS= -shared -Wl,-soname,$(LIBNAME).so
+SHARED_LINKER_FLAGS= -shared -Wl,-soname,libserial.so
 SHARED_LINKER_LIBS=
 
 LIB_DIR=/usr/local/lib
