@@ -68,6 +68,7 @@ SerialPort::~SerialPort()
                         - 115200
                         - 230400
                         - 460800
+                        - 921600
      \param Databits : Number of data bits in one UART transmission.
 
             \n Supported values: \n
@@ -234,6 +235,7 @@ char SerialPort::openDevice(const char *Device, const unsigned int Bauds,
     case 115200 :   Speed=B115200; break;
     case 230400 :   Speed=B230400; break;
     case 460800 :   Speed=B460800; break;
+    case 921600 :   Speed=B921600; break;
     default : return -4;
     }
     int databits_flag = 0;
